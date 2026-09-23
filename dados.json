@@ -1,0 +1,36 @@
+[
+    {
+    "Nome": "Cesar",
+    "idade": "41",
+    "antesedente criminal": "não que eu saiba",
+    "preso": "não sei "
+
+    },
+     {
+    "Nome": "zico",
+    "idade": "59",
+    "antesedente criminal": "4",
+    "preso": "9"
+
+    },
+     {
+    "Nome": "zalo",
+    "idade": "63",
+    "antesedente criminal": "7",
+    "preso": "6"
+
+    },
+     {
+    "Nome": "zelio",
+    "idade": "67",
+    "antesedente criminal": "não",
+    "preso": "não"
+
+    }, {
+    "Nome": "diego",
+    "idade": "40",
+    "antesedente criminal": "ser petista",
+    "preso": "so o lula"
+
+    }
+]
