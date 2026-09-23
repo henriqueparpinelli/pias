@@ -1,32 +1,41 @@
 [
-    {
+    {//aluno
+    "CDM": "12",
     "Nome": "Cesar",
-    "idade": "41",
-    "antesedente criminal": "não que eu saiba",
-    "preso": "não sei "
+    "CPF": "17765409867",
+    "Login": "gmail.com",
+    "Cidade": "Foz do iguaçu",
+    "Telefone": "45 458736354",
+    "CEP": "8538596"
+   
 
     },
-     {
-    "Nome": "zico",
-    "idade": "59",
-    "antesedente criminal": "4",
-    "preso": "9"
+     {//modalidade//
+    "ID": "11",
+    "Esporte": "Futebol",
+    "Turno": "manhã",
+    "Turma": "2ADS",
+    "Agenda": "quarta-feira"
 
     },
-     {
-    "Nome": "zalo",
-    "idade": "63",
-    "antesedente criminal": "7",
-    "preso": "6"
+     {//treinador
+    "ID": "21",
+    "Nome": "Felipe",
+    "CPF": "2469764957",
+    "Login": "Faz o l",
+    "Cidade": "Foz do iguaçu",
+    "Telefone": "45907344t436",
+    "CEP": "757748396"
 
     },
-     {
-    "Nome": "zelio",
+     {//porntuario
+    "ID": "45",
     "idade": "67",
     "antesedente criminal": "não",
     "preso": "não"
 
-    }, {
+    },
+     {//aluno modalidade
     "Nome": "diego",
     "idade": "40",
     "antesedente criminal": "ser petista",

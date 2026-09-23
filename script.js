@@ -1,19 +1,40 @@
 const form = document.getElementById('formEndereco');
-const aviso = document.getElementById('aviso');
 const corpoTabela = document.getElementById('corpoTabela');
+const aviso = document.getElementById('aviso');
 
-function lerFormulario(formulario) {
-    const dados = {};
-    const campos = new FormData(formulario);
-    campos.forEach(function (vslor, chave) {
-        dados[chave] = valor;
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
 
+  const formData = new FormData(form);
+  
+  const nome = formData.get('Nome');
+  const cpf = formData.get('CPF');
+  const gmail = formData.get('@gmail');
+  const cidade = formData.get('Cidade');
+  const telefone = formData.get('Telefone');
+  const cep = formData.get('CEP');
+  const id = formData.get('ID');
 
-    });
-    return dados;
+  const novaLinha = document.createElement('tr');
 
-}
-function mostrarAviso(texto, ehErro) {
-    aviso.textContent = texto;
-    aviso.className = ehErro ? 'erro' : '';
-}
+  novaLinha.innerHTML = `
+    <td>${nome}</td>
+    <td>${cpf}</td>
+    <td>${gmail}</td>
+    <td>${cidade}</td>
+    <td>${telefone}</td>
+    <td>${cep}</td>
+    <td>${id}</td>
+  `;
+
+  corpoTabela.appendChild(novaLinha);
+
+  aviso.textContent = "Aluno cadastrado com sucesso!";
+  aviso.style.color = "green";
+
+  form.reset();
+
+  setTimeout(() => {
+    aviso.textContent = "";
+  }, 3000);
+});
