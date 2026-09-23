@@ -1,0 +1,7 @@
+SELECT
+	alunomodalidade.modalidade_esporte AS 'esporte',
+    aluno.nome AS 'aluno',
+    aluno.cpf AS '11'
+    
+FROM alunomodalidade
+	INNER JOIN aluno on alunomodalidade.aluno_id = aluno.id;
