@@ -21,7 +21,9 @@
         </label>
         <label style="flex: 3 1 300px;">
           <span>CPF</span>
-          <input name="CPF" required placeholder="235-743-785.98">
+          <input name="CPF" required placeholder="000.000.000-00"
+          maxlength="14"
+          oninput="aplicarMascaraCPF(this)">
         </label>
         <label style="flex: 0 1 100px;">
           <span>@gmail</span>
@@ -36,18 +38,23 @@
         </label>
         <label>
           <span>Telefone</span>
-          <input name="Telefone" required placeholder="4599982364">
+          <input name="Telefone" required 
+           placeholder="(00) 00000-0000"
+           maxlength="15"
+           oninput="aplicarMascaraTelefone(this)">
         </label>
       </div>
 
       <div class="linha">
         <label style="flex: 3 1 240px;">
           <span>CEP</span>
-          <input name="CEP" required placeholder="858564-54">
+          <input name="CEP" required  placeholder="00000-000"
+           maxlength="9"
+           oninput="aplicarMascaraCEP(this)">
         </label>
         <label style="flex: 0 1 80px;">
           <span>ID</span>
-          <input name="ID" maxlength="2" placeholder="11">
+          <input name="ID" maxlength="3" placeholder="000">
         </label>
       </div>
 

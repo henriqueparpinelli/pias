@@ -2,6 +2,30 @@ const form = document.getElementById('formEndereco');
 const corpoTabela = document.getElementById('corpoTabela');
 const aviso = document.getElementById('aviso');
 
+function aplicarMascaraCPF(input) {
+    let valor = input.value.replace(/\D/g, "");
+    valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+    valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+    valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    input.value = valor;
+}
+
+function aplicarMascaraTelefone(input) {
+    let valor = input.value.replace(/\D/g, "");
+    valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
+    valor = valor.replace(/(\d{4,5})(\d{4})$/, "$1-$2");
+    input.value = valor;
+}
+
+function aplicarMascaraCEP(input) {
+    let valor = input.value.replace(/\D/g, "");
+    valor = valor.replace(/^(\d{5})(\d)/, "$1-$2");
+    input.value = valor;
+}
+
+
+
+
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
